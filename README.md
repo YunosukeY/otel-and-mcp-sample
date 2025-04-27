@@ -13,5 +13,9 @@ npx ts-node http-server.ts
 ```
 
 ```
-npx ts-node http-client.ts
+npx ts-node proxy-server.ts
+```
+
+```
+curl -X POST http://localhost:3001/mcp
 ```

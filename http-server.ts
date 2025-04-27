@@ -1,9 +1,11 @@
 import express, { type Request, type Response } from "express";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { server } from "./mcp-server";
-import { sdk } from "./instrumentation";
+import { sdkStart } from "./instrumentation";
 
-sdk.start();
+sdkStart({
+  serviceName: "mcp-server",
+});
 
 const app = express();
 app.use(express.json());
