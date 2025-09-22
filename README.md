@@ -1,3 +1,5 @@
+本リポジトリは『[MCPサーバをOpenTelemetryで計装する](https://zenn.dev/kimitsu/articles/otel-and-mcp)』のサンプルコードです。
+
 ```
 docker run -d --name jaeger \
   -p 16686:16686 \
